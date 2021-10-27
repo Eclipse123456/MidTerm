@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>MidTermTrial</title>
+</head>
+
+<body onload="Quiz();">
+    <div class="header">
+        <img class="headerimg" src="./header.jpg" alt="">
+    </div>
+
+    <div class="tab">
+        <button class="tablinks" onclick="parent.location='exams.html'" id="defaultOpen">Home</button>
+        <button class="tablinks" onclick="parent.location='quiz.html'" id="defaultOpen">Quiz</button>
+        <button class="tablinks" onclick="parent.location='contact.html'" id="defaultOpen">Contact</button>
+    </div>
+
+    <div id="Quiz" class="tabcontent">
+        <form action="/action_page.php">
+            <br>
+            <label for="name">First name:</label>
+            <br>
+            <input type="text" id="name" name="name"><br>
+            <label for="number">ID:</label>
+            <br>
+            <input type="number" id="number" name="number" value="0">
+            
+            <p>Inside which HTML element do we put the JavaScript (choose one)</p>
+            <input type="radio" id="ans1" name="ans1">&ltscripting&gt
+            <br>
+            <input type="radio" id="ans2" name="ans1">&ltjs&gt
+            <br>
+            <input type="radio" id="ans3" name="ans1">&ltjavascript&gt
+            <br>
+            <input type="radio" id="ans4" name="ans1">&ltscript&gt
+            <br>
+            <p>The external JavaScript file must contain the &ltscript&gt tag (check all that apply)</p>
+            <input type="checkbox" id="ans5" name="ans1">True
+            <br>
+            <input type="checkbox" id="ans6" name="ans2">False
+            <br>
+            <input type="checkbox" id="ans7" name="ans3">None
+            <br>
+            <input type="checkbox" id="ans8" name="ans4">Both
+            <br>
+            <p>How do you write "Hello World" in an alert box? (Select option)</p>
+            <input type="radio" id="ans9" name="ans3">Alert(“Hello World”);
+            <br>
+            <input type="radio" id="ans10" name="ans3">alertBox(“Hello World”);
+            <br>
+            <input type="radio" id="ans11" name="ans3">msg(“Hello World”);
+            <br>
+            <input type="radio" id="ans12" name="ans3">msgBoxl(“Hello World”);
+            <br>
+            <br><br><input type="button" value="Submit" id="submit" onclick="sub()">
+            <br>
+            <p id="result"></p>
+          </form>
+    </div>
+
+
+</body>
+
+</html>
